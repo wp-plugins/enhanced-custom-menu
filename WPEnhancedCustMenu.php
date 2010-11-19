@@ -39,7 +39,7 @@ License: GPL2
 function _wp_auto_add_pages_to_menu_all_level( $new_status, $old_status, $post ) {
 	global $wpdb;
 	
-	if ( 'publish' != $new_status || 'publish' == $old_status || 'page' != $post->post_type )
+	if ( 'publish' != $new_status /*|| 'publish' == $old_status*/ || 'page' != $post->post_type )
 		return;
 	$auto_add = get_option( 'nav_menu_options' );
 	if ( empty( $auto_add ) || ! is_array( $auto_add ) || ! isset( $auto_add['auto_add'] ) )
@@ -75,6 +75,9 @@ function _wp_auto_delete_menu_item_fix( $new_status, $old_status, $post ) {
 	global $wpdb;
 	if ( 'publish' == $new_status || 'page' != $post->post_type )
 		return;
+	$children = get_pages('child_of='.$post->ID);
+	if( count( $children ) != 0 ) 
+    	return;    
 	_wp_delete_post_menu_item($post->ID);
 }
 
