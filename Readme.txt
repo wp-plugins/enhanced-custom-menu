@@ -4,7 +4,7 @@ Donate link: http://www.jessejdyer.com/donate
 Tags: WP 3.0, 3.0, Custom Menu, Sub-menu, Submenu, Subpage, Sub-page, Delete Menu Item, 3.0 Fix Delete, Trash Page, Nav Menu, wp_list_pages, Hierarchy, Auto, Automatically.
 Requires at least: 3.0
 Tested up to: 3.0.1
-Stable tag: 0.1.1
+Stable tag: 0.2
 
 This plugin alters the custom menu auto-add function allowing subpages and delete menu item after un-publishing a page.
 
@@ -14,7 +14,7 @@ Enhanced Custom Menu replaces the 'Automatically add new top-level pages' featur
 This is perfect for those who would like to automatically add subpages to their navigation menu on publish without editing core wordpress files.
 Enhanced Custom Menu also updates the delete menu item feature, when a page is changed from publish to draft, review, or moved to the trash, the respective menu item is removed. If the page is later added re-published the menu item will come back.
 
-In 0.1.1 pages that have sub-pages are not removed from the menu if they are changed from published status. This retains the structure of the menu.
+In 0.2 pages that have sub-pages are not removed from the menu if they are changed from published status. This retains the structure of the menu.
 
 Note: You must have custom menus enabled, running wordpress 3.0, and turn on 'Automatically add new top-level pages.'
 
@@ -33,7 +33,7 @@ Note: You must have custom menus enabled, running wordpress 3.0, and turn on 'Au
 
 == Changelog ==
 
-= 0.1.1 =
+= 0.2 =
 * Pages with sub-pages are not removed from menu retaining the menu structure.
 
 = 0.1 =

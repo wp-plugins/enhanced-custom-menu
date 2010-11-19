@@ -2,7 +2,7 @@
 /*
 Plugin Name: Enhanced Custom Menu
 Description: Automatically add sub-pages to Wordpress 3.0 custom menu management.
-Version: 0.1.1
+Version: 0.2
 Author: Jesse Dyer
 License: GPL2
 
@@ -76,8 +76,9 @@ function _wp_auto_delete_menu_item_fix( $new_status, $old_status, $post ) {
 	if ( 'publish' == $new_status || 'page' != $post->post_type )
 		return;
 	$children = get_pages('child_of='.$post->ID);
-	if( count( $children ) != 0 ) 
-    	return;    
+	if( count( $children ) != 0 ) {
+		return;   
+		}
 	_wp_delete_post_menu_item($post->ID);
 }
 
