@@ -2,7 +2,7 @@
 /*
 Plugin Name: Enhanced Custom Menu
 Description: Automatically add sub-pages to Wordpress 3.0 custom menu management.
-Version: 0.1
+Version: 0.1.1
 Author: Jesse Dyer
 License: GPL2
 
